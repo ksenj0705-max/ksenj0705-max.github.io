@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Федорів Оксана — Тортики на замовлення</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:#fff7fa;color:#171216}
+:root{--pink:#f25b91;--dark:#171216;--soft:#ffe4ee;--white:#fff}
+nav{position:fixed;top:0;left:0;right:0;z-index:10;background:#fff9fcdd;backdrop-filter:blur(12px);border-bottom:1px solid #f5d5e1}
+.nav{max-width:1100px;margin:auto;padding:15px 22px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:800;color:var(--pink);font-size:20px}.links a{margin-left:22px;text-decoration:none;color:#171216;font-weight:600}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 22px 60px;background:radial-gradient(circle at 80% 25%,#ffd8e7 0 15%,transparent 38%),linear-gradient(135deg,#fff,#fff1f6)}
+.hero-inner{max-width:1100px;width:100%;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.badge{display:inline-block;background:var(--soft);color:#b62d61;padding:9px 15px;border-radius:999px;font-weight:700}
+h1{font-size:clamp(44px,7vw,78px);line-height:.95;margin:20px 0 12px}.pink{color:var(--pink)}.hero p{font-size:19px;line-height:1.6;color:#655b60;max-width:650px}
+.btn{display:inline-block;margin-top:18px;padding:15px 23px;border-radius:14px;background:var(--dark);color:white;text-decoration:none;font-weight:800}.btn:hover{transform:translateY(-2px)}
+.experience{margin-top:32px;display:flex;align-items:center;gap:14px}.experience strong{font-size:42px;color:var(--pink)}.experience span{color:#6c6267}
+.cake{min-height:430px;border-radius:35px;background:linear-gradient(145deg,#ffc5dc,#f15b91);display:flex;align-items:center;justify-content:center;box-shadow:0 25px 60px #ef6b9738;position:relative;overflow:hidden}
+.cake:before{content:"🎂";font-size:170px;filter:drop-shadow(0 18px 15px #9b315b55)}.cake:after{content:"";position:absolute;width:220px;height:220px;border:1px solid #ffffff88;border-radius:50%;top:-70px;right:-50px}
+section{padding:85px 22px}.container{max-width:1100px;margin:auto}.section-head{text-align:center;margin-bottom:40px}.section-head h2{font-size:40px;margin:0 0 10px}.section-head p{color:#71676c}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fff;border:1px solid #f5dbe5;border-radius:22px;padding:25px;transition:.2s;box-shadow:0 8px 25px #d94d7d0b}.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #d94d7d20}.icon{font-size:34px}.card h3{margin:13px 0 6px}.card p{margin:0;color:#766b70}
+.about{background:#171216;color:#fff}.about .section-head p{color:#cfc4c9}.about-box{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}.about-text{font-size:18px;line-height:1.75;color:#ded3d8}.facts{display:grid;grid-template-columns:1fr 1fr;gap:15px}.fact{padding:25px;background:#241e22;border-radius:20px;border:1px solid #3b3036}.fact b{font-size:32px;color:#ff75a6;display:block}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{background:#fff;padding:24px;border-radius:22px}.num{color:var(--pink);font-weight:900;font-size:25px}
+.contact{background:#ffe6ef;text-align:center}.contact h2{font-size:42px;margin-top:0}.contact a{color:#171216;font-weight:800}.footer{text-align:center;padding:22px;color:#776b71;font-size:14px}
+@media(max-width:760px){.links{display:none}.hero-inner,.about-box{grid-template-columns:1fr}.cake{min-height:280px}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}section{padding:65px 17px}h1{font-size:52px}.hero p{font-size:17px}}
+@media(max-width:470px){.grid,.steps{grid-template-columns:1fr}.cake:before{font-size:120px}}
+
+.price-box{max-width:760px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.price-card,.decor-note{background:#fff;border:1px solid #f5dbe5;border-radius:28px;padding:30px;box-shadow:0 12px 35px #d94d7d12}
+.price-card{text-align:center;background:linear-gradient(145deg,#fff,#ffe9f1)}
+.price-label{font-weight:700;color:#766b70}.price-value{font-size:58px;font-weight:900;color:var(--pink);margin:8px 0}.price-value span{font-size:22px}.price-unit{color:#766b70}
+.decor-note{display:flex;align-items:center;gap:18px}.decor-icon{font-size:45px}.decor-note h3{margin:0 0 6px}.decor-note p{margin:0;color:#766b70}
+@media(max-width:760px){.price-box{grid-template-columns:1fr}.price-value{font-size:48px}}
+</style>
+</head>
+<body>
+<nav><div class="nav"><div class="logo">Федорів Оксана</div><div class="links"><a href="#tastes">Смаки</a><a href="#price">Ціни</a><a href="#about">Про мене</a><a href="#order">Замовлення</a></div></div></nav>
+
+<header class="hero">
+<div class="hero-inner">
+<div>
+<span class="badge">🌸 Тортики на замовлення</span>
+<h1>Федорів<br><span class="pink">Оксана</span></h1>
+<p>Створюю тортики індивідуально під ваше свято — з любов’ю до смаку, дизайну та кожної маленької деталі.</p>
+<div class="experience"><strong>8</strong><span>років<br>досвіду</span></div>
+</div>
+<div class="cake"></div>
+</div>
+</header>
+
+<section id="tastes">
+<div class="container">
+<div class="section-head"><h2>🎂 Смаки тортиків</h2><p>Обирайте свій улюблений смак</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🥭</div><h3>Манго-маракуя</h3><p>Білі бісквітні коржі, крем з сиру креметте, маскарпоне та вершків, та прошарки з манго та маракуї.</p></div>
+<div class="card"><div class="icon">☕</div><h3>Тірамісу</h3><p>Ніжні бісквітні коржі, крем у поєднанні з сирів маскарпоне, креметте і вершків, персикова прослойка.</p></div>
+<div class="card"><div class="icon">🍫</div><h3>Буено</h3><p>Шоколадні бісквітні коржі, мус буено, шоколадний крем ганаш на основі молочного та чорного шоколаду, хрусткий прошарок з фундуком та крем-сир з нутеллою.</p></div>
+<div class="card"><div class="icon">🍪</div><h3>Кукіс</h3><p>Пісочні коржі, спечений карамельний чізкейк, крем з сиру креметте і печива з арахісовою пастою, шоколадний крем.</p></div>
+<div class="card"><div class="icon">🍫</div><h3>Фереро Роше</h3><p>Вологі бісквітні коржі, крем з сиру маскарпоне, шоколаду та нутелли, хрусткий прошарок з фундука, шоколаду та роялтину.</p></div>
+<div class="card"><div class="icon">🥥</div><h3>Рафаело</h3><p>Коржі на мигдалево-пшеничному борошні, крем з сиру креметте і вершків, начинка Рафаелло, дуже схожа на цукерки Рафаелло, та мигдалевий горіх.</p></div>
+<div class="card"><div class="icon">❤️</div><h3>Червоний оксамит</h3><p>Бісквітні коржі з додаванням червоного барвника, крем з сиру креметте і вершків, полунична прослойка (можна замінити на вишеньку).</p></div>
+<div class="card"><div class="icon">🍪</div><h3>Орео</h3><p>Шоколадні бісквітні коржі, спечений чізкейк з сиру креметте і печива Орео, крем з сиру креметте і вершків з додаванням крихти печива Орео.</p></div>
+<div class="card"><div class="icon">🍓</div><h3>Малиновий пломбір</h3><p>Білі бісквітні коржі, малиново-пломбірна прослойка, мус на основі йогурту та вершків.</p></div>
+<div class="card"><div class="icon">🥜</div><h3>Снікер</h3><p>Шоколадні коржі, крем з сиру креметте і вершків, карамель, арахіс.</p></div>
+<div class="card"><div class="icon">🍊</div><h3>Апельсин-карамель</h3><p>Шоколадні коржі, карамельно-апельсинова прослойка, апельсиновий курд та мус на чорному шоколаді.</p></div>
+<div class="card"><div class="icon">🫐</div><h3>Вершково-ягідний</h3><p>Білі бісквітні коржі, крем з сиру креметте і вершків та полуничний соус зі шматочками полуниці (полуничку можна замінити на вишеньку).</p></div>
+</div>
+</div>
+</section>
+
+<section id="about" class="about">
+<div class="container">
+<div class="section-head"><h2>👩‍🍳 Про мене</h2><p>Трохи більше про мою справу</p></div>
+<div class="about-box"><div class="about-text">Я створюю тортики, які хочеться не тільки красиво сфотографувати, а й із задоволенням скуштувати. Кожне замовлення можна адаптувати під ваше свято, побажання та улюблені смаки.</div>
+<div class="facts"><div class="fact"><b>8+</b>років досвіду</div><div class="fact"><b>100%</b>індивідуальний дизайн</div><div class="fact"><b>♥</b>увага до деталей</div></div></div>
+</div>
+</section>
+
+
+<section id="price">
+<div class="container">
+<div class="section-head"><h2>💗 Price</h2><p>Вартість тортика</p></div>
+<div class="price-box">
+  <div class="price-card">
+    <div class="price-label">Вартість тортика</div>
+    <div class="price-value">1000 <span>грн</span></div>
+    <div class="price-unit">за 1 кг тортика</div>
+  </div>
+  <div class="decor-note">
+    <div class="decor-icon">🎀</div>
+    <div><h3>Декор</h3><p>Декор оплачується окремо.</p></div>
+  </div>
+</div>
+</div>
+</section>
+
+
+<section id="order">
+<div class="container">
+<div class="section-head"><h2>✨ Як замовити</h2><p>Все просто — усього кілька кроків</p></div>
+<div class="steps"><div class="step"><div class="num">01</div><h3>Напишіть</h3><p>Розкажіть про бажану дату та формат тортика.</p></div><div class="step"><div class="num">02</div><h3>Оберіть смак</h3><p>Виберіть один із 12 смаків.</p></div><div class="step"><div class="num">03</div><h3>Обговоримо дизайн</h3><p>Підберемо оформлення під ваше свято.</p></div><div class="step"><div class="num">04</div><h3>Отримайте</h3><p>Готовий тортик чекатиме на вас у домовлений час.</p></div></div>
+</div>
+</section>
+
+<div class="footer">© Федорів Оксана · Тортики на замовлення</div>
+</body>
+</html>
